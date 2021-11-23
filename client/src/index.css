@@ -1,0 +1,636 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Common */
+.clear {
+  clear: both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, input, select, button {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  /* Toc do chuyen trang thai cua button */
+  transition-duration: 0.3s;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.column {
+  float: left !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.three-column {
+  width: 33.3333%;
+}
+
+.two-column {
+  width: 50%;
+}
+
+.one-column {
+  width: 100%;
+}
+
+.four-column {
+  width: 22%;
+}
+
+/* Main */
+#main {
+  overflow: hidden;
+}
+
+#header {
+  height: 46.4px;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#navigation {
+  display: block;
+}
+
+#navigation > li {
+  display: block;
+  float: left;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#navigation .login-logout {
+  float: right;
+}
+
+#navigation li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  line-height: 46.4px;
+  padding: 0px 24px !important;
+  text-transform: uppercase;
+}
+
+#navigation li:hover > a {
+  background-color: #ccc;
+  color: black !important;
+}
+
+#navigation .login-logout:hover > a {
+  background-color: rgb(244, 67 , 54);
+  color: white !important;
+}
+
+#slider {
+  position: relative;
+  padding-top: 1%;
+  margin-top: 46.4px;
+  background: url("http://digiflex.themezinho.net/wp-content/uploads/2020/12/slide03.jpg") no-repeat center center / cover;
+  height: 50vh;
+
+}
+
+#slider .container {
+  width: 100%;
+  margin: 30px 150px; 
+  box-sizing: border-box;
+  color: white;
+  text-align: left;
+}
+
+#slider .heading {
+  width: 100%;
+  font-size: 70px;
+  margin-bottom: 50px;
+  font-weight: 1000 !important;
+  letter-spacing: 7px;
+}
+
+#slider .description {
+  font-size: 20px;
+  padding-right: 60vw;
+  letter-spacing: 3px;
+}
+
+.movie-list {
+  padding-top: 100px;
+  height: auto;
+  min-height: 830px;
+  width: 1260px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.section-title {
+  margin-left: 15px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.section-title h5 {
+  margin-bottom: 15px;
+  opacity: 0.6;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.movie-item {
+  height: 540px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.movie-item .poster-box {
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+}
+
+.movie-item .poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-item .poster:hover {
+  opacity: 0.6;
+}
+
+.movie-item .box-information {
+  margin: 15px 0;
+}
+
+.movie-item .title {
+  font-weight: 200;
+  height: 45px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.web-button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 16px;
+  width: 108px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+}
+
+.web-button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.web-button.two {
+  float: right;
+}
+
+.detail-container {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.detail-movie {
+  width: 920px;
+  height: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  align: center;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.detail-movie .detail-poster {
+  height: 95%;
+  width: 40%;
+  object-fit: cover;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 14px;
+  float: left;
+}
+
+.detail-movie .detail-box-infor {
+  height: 100%;
+  width: 55%;
+  float: left;
+  padding: 25px;
+  display: inline-block;
+  color: #000;
+}
+
+.detail-movie .row {
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+.detail-box-infor .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+.detail-box-infor .plot {
+  display: block;
+  color: #fb802d;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.plot-box {
+  max-height: 280px;
+  overflow: auto;
+}
+
+.plot-box::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: white;
+}
+
+.plot-box::-webkit-scrollbar
+{
+	width: 12px;
+  border-radius: 10px;
+	background-color: white;
+}
+
+.plot-box::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FDEFEF;
+}
+
+.detail-box-infor .full-plot {
+  text-align: justify;
+  font-weight: lighter;
+}
+
+.detail-box-infor .genres {
+  margin-top: 15px;
+  color: #fb802d;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.detail-box-infor .more {
+  margin: 25px -30px;
+}
+
+.detail-box-infor .more .content {
+  color: #fb802d;
+  font-weight: 400;
+}
+
+.detail-box-infor .more .column {
+  display: inline-block;
+  float: left;
+  width: 40% !important;
+}
+
+/* Login page */
+.login-container {
+  padding-top: 80px;
+  background: url("https://wallpaper.dog/large/5553448.jpg") no-repeat bottom center / cover;
+  padding-bottom: 82px;
+}
+
+.login-page {
+  width: 420px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  background-color: white;
+}
+
+.login-page img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -15px;
+}
+
+.login-page .login-box {
+  width: 100%;
+  height: 330px;
+  padding: 40px 40px 50px 40px;
+}
+
+.login-box h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.login-page input {
+  width: 100%;
+  margin-top: 24px;
+  padding-left: 6px;
+  height: 40px;
+  color: #353030;
+  border: 1px solid #57CC99;
+  border-radius: 4px;
+  outline: none;
+}
+
+.login-page button {
+  height: 44px;
+  width: 100%;
+  background-color: #57CC99;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border-radius: 22px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.login-page button:hover {
+  opacity: 0.8;
+}
+
+.login-page .sign-up {
+  text-align: center;
+  font-size: 13px;
+}
+
+.login-box a {
+  text-decoration: none;
+  color: #57CC99;
+}
+
+.show-item {
+  height: 600px !important;
+}
+
+.show-item p {
+  width: 44%;
+  padding: 0 !important;
+  font-size: 13px;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.show-item button {
+  margin-top: 15px;
+}
+
+/* Footer CSS */
+#footer {
+  width: 100%;
+  height: 88px;
+  padding-top: 100px;
+  padding-bottom: 64px;
+  box-sizing: unset;
+  text-align: center;
+  opacity: 0.6;
+}
+
+#footer .icon {
+  margin: auto;
+}
+
+#footer .app-icon {
+  font-size: 24px !important;
+  width: 40px;
+  display: inline-block;
+}
+
+#footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  opacity: 0.4;
+}
+
+#footer .description {
+  padding-left: 0 !important;
+  letter-spacing: 1px;
+}
+
+#footer .description p {
+  margin-bottom: 10px;
+}
+
+.show-infor .information {
+  width: 400px;
+  float: left;
+}
+
+.show-infor .two-column {
+  display: inline-block;
+  width: 40%;
+}
+
+.detail-show h6 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #fb802d;
+}
+
+
+.show-infor .seats {
+  padding-top: 50px;
+  margin-left: 0;
+}
+
+.seats button {
+  display: inline-block;
+  float: left;
+  padding: 0;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 16px;
+  width: 108px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+}
+
+.seats button:active {
+  background-color: #ccc;
+  color: #000;
+}
+
+.column13 {
+  width: 5% !important;
+}
+
+.seats {
+  height: 200px;
+}
+
+.seats .inUse {
+  cursor: context-menu;
+  background-color: #fb802d;
+}
+
+.seats .canSelect:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.selectSeat {
+  padding-top: 100px;
+  margin-left: 15px;
+}
+
+.selectSeat p {
+  color: #000 !important;
+  display: inline-block;
+  float: left;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.selectSeat {
+  padding-top: 100px;
+  margin-left: 15px;
+}
+
+.selectSeat .row {
+  padding-bottom: 50px;
+  margin-left: 0;
+}
+
+.show-infor .payment {
+  margin-left: 15px;
+  background-color: #17D7A0;
+}
+
+.not-found {
+  font-size: 100px;
+  margin-top: 75vh;
+  margin-left: 50px;
+  color: black;
+  font-weight: 400px;
+}
+
+.create-movie .form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create-movie label {
+  margin-bottom: 15px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.create-movie textarea {
+  padding: 5px;
+  display: block;
+  width: 80%;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding-left: 6px;
+  color: #353030;
+  border: 1px solid #57CC99;
+  border-radius: 4px;
+  outline: none;
+  height: 50px;
+}
+
+.create-movie .two-column {
+  width: 45%;
+}
+
+.create-movie .web-button {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.create-movie .section-title {
+  margin-bottom: 30px;
+}
+
+.create-movie {
+  height: 100vh !important;
+  min-height: 0 !important;
+}
+
+#create-show {
+  height: 500px !important;
+}
+
+.filter_menu {
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter_menu input {
+  width: 95%;
+  height: 50px;
+  color: #353030;
+  border: 1px solid #57CC99;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
+
+.history-page {
+
+}
+
+.history-page th, td {
+  padding-right: 50px;
+  padding-left: 15px;
+  padding-top: 10px;
+  text-align: left;
+}
